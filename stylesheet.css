@@ -1,0 +1,47 @@
+*{
+    background: rgb(119, 119, 119);
+}
+li{
+    list-style: none;
+}
+header nav{
+    display: flex;
+    justfy-content: space-between;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li #icon{
+    width: 25%    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer ul{
+    width: 50%;
+}
+#test{
+    display: flex;
+    padding: 0% 25%;
+}
+#test2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#test3{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+#test4{
+    display: flex;
+    justify-content: center;
+}
+#test5{
+    display: flex;
+    justify-content: center;
+}
