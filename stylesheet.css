@@ -8,18 +8,35 @@ body{
 li{
     list-style: none;
 }
-header div.topNav{
-    display: flex;
-    justify-content: space-between;
+/*===============================
+
+    Header
+
+===============================*/
+nav.topNav{
     background-color: #12171d;
 }
-header nav ul{
+nav.topNav div.topNavcf{
     display: flex;
-    justify-content: flex-end;
 }
-header nav ul li #icon{
-    width: 25%    
+nav.topNav div.topNavcf div.left h1 a{
+    color: transparent
 }
+nav.topNav div.topNavcf div.left h1{
+    background-image: url("images/icons/bungie_logo_with_shield.svg");
+    background-repeat: no-repeat;
+}
+#nav-items{
+    display: flex;
+}
+div.userMenuBucket{
+    display: flex;
+}
+/*===============================
+
+    Main
+
+===============================*/
 main{
     width: 100%;
     padding: 0 7%;
@@ -46,6 +63,11 @@ main content{
 #twitter{
     background-color: #12171d;
 }
+/*===============================
+
+    Footer
+
+===============================*/
 footer{
     display: flex;
     flex-direction: column;
