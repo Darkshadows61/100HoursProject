@@ -8,29 +8,89 @@
         <link rel ='stylesheet' href="stylesheet.css">
         <title>100 Hours Project</title>
     </head>
-
+<a href="topNav.html">TOP NAV DEMO</a>
         <body>
             <header>
-                <nav class="topNav">
-                    <div class="topNavcf">
-                        <div class="left">
-                            <h1><a href="/" class="logo">Destiny</a></h1>
+                <nav class="Top_Nav">
+                    <div class="top_nav cf">
+                        <div class="left navLogo h1">
+                            <div class="smallMenu"></div>
+                            <h1>
+                                <a href="#Home.html" class="ir logo">Destiny</a>
+                            </h1>
                         </div>
-                        <div id="nav-items" class="left">
-                            <div class="navBucket">
-                                <a href='#'>Destiny 2</a>
+                        <div id="navItems" class="left">
+                            <div class="loggedOutButtons">
+                                <a class="buttonJoinUp controlKit gold medium jsJoinUp loButton clickable" href="#" data-identifier="joinUp"> Join Up</a>
+                                <div class="buttonSignIn controlKit button white medium jsSignIn loButton" data-identifier="signIn">Sign In</div>
                             </div>
-                            <div class="navBucket">
+                            <div class="navBucket" data-id data-show-collapsed-at="max'">
+                                <a href='#'>Destiny 2</a>
+                                <i class="maertialIcons expand"> expand more</i>
+                                <div class="navBucketItems">
+                                    <a data-hide-at="max" class="TopNavWitchQueen" data-id="witchQueen" href="#">
+                                        <div class="secondaryLabel">Year 5 Expansion</div>
+                                        <div>THE WITCH QUEEN</div>
+                                    </a>
+                                    <hr>
+                                    <a data-hide-at="max" class =TopNavNewLight data-id="newLight" href="#">
+                                        <div>PLAY FOR FREE</div>
+                                    </a>
+                                    <a data-hide-at="max" class =TopNavAnniversaryEvent data-id="anniversaryEvent" href="#">
+                                        <div>30th ANNIVERSARY EVENT</div>
+                                    </a>
+                                    <a data-hide-at="max" class =TopBeyondLight data-id="beyondLight" href="#">
+                                        <div class="secondaryLabel">Year 4 Expansion</div>
+                                        <div>BEYOND LIGHT</div>
+                                    </a>
+                                    <a data-hide-at="max" class =TopNavShadowkeep data-id="shadowkeep" href="#">
+                                        <div class="secondaryLabel">Year 3 Expansion</div>
+                                        <div>SHADOWKEEP</div>
+                                    </a>
+                                </div>
+                            <div class="navBucket" data-id="seasons" data-show-collapsed-at="max">
                                 <a href='#'>Seasons</a>
+                                <a data-hide-at="max" class="TopNavCurrentSeason" data-id="currentSeason" href="#">
+                                    <div class="secondaryLabel">Current Season</div>
+                                    <div>[REDACTED]</div>
+                                </a>
+                                <hr>
+                                <a data-hide-at="max" class =TopNavPastSeasons data-id="pastSeasons" href="#">
+                                    <div>PAST SEASONS</div>
+                                </a>
                             </div>
                             <div class="navBucket">
                                 <a href='#'>Community</a>
+                                <a data-hide-at="max" class="TopNavCurrentSeason" data-id="currentSeason" href="#">
+                                    <div class="secondaryLabel">Current Season</div>
+                                    <div>[REDACTED]</div>
+                                </a>
+                                <hr>
+                                <a data-hide-at="max" class =TopNavPastSeasons data-id="pastSeasons" href="#">
+                                    <div>PAST SEASONS</div>
+                                </a>
                             </div>
                             <div class="navBucket">
                                 <a href='#'>Help</a>
+                                <a data-hide-at="max" class="TopNavCurrentSeason" data-id="currentSeason" href="#">
+                                    <div class="secondaryLabel">Current Season</div>
+                                    <div>[REDACTED]</div>
+                                </a>
+                                <hr>
+                                <a data-hide-at="max" class =TopNavPastSeasons data-id="pastSeasons" href="#">
+                                    <div>PAST SEASONS</div>
+                                </a>
                             </div>
                             <div class="navBucket">
                                 <a href='#'>Store</a>
+                                <a data-hide-at="max" class="TopNavCurrentSeason" data-id="currentSeason" href="#">
+                                    <div class="secondaryLabel">Current Season</div>
+                                    <div>[REDACTED]</div>
+                                </a>
+                                <hr>
+                                <a data-hide-at="max" class =TopNavPastSeasons data-id="pastSeasons" href="#">
+                                    <div>PAST SEASONS</div>
+                                </a>
                             </div>
                             <a class="buyDestiny"><button>Play Destiny 2</button></a>
                         </div>

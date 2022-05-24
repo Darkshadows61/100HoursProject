@@ -3,15 +3,11 @@
 	RESETS                            
 
 =======================================*/
-
-
-html
-{
+html{
 	height: 100%;
 }
 
-html.delay-interaction:after
-{
+html.delay-interaction:after{
 	position: fixed;
 	z-index: 9999;
 
@@ -26,66 +22,43 @@ html.delay-interaction:after
 	background: #060606;
 }
 
-html.delay-interaction.documentReady:after
-{
+html.delay-interaction.documentReady:after{
 	opacity: 0;
 	visibility: hidden;
 }
 
-html,
-body
-{
+html,body{
 	margin: 0;
 }
 
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-{
+ul,li,h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-{
+h1,h2,h3,h4,h5,h6{
 	font-weight: 700;
 	font-weight: normal;
 }
 
-ul,
-li
-{
+ul,li{
 	list-style-type: none;
 }
 
-a
-{
+a{
 	cursor: pointer;
 	text-decoration: none;
 }
 
-.ja em
-{
+.ja em{
 	font-style: normal !important;
 }
 
-img
-{
+img{
 	border: 0;
 }
 
-hr
-{
+hr{
 	height: 0;
 	margin: 1rem 0;
 
@@ -99,22 +72,17 @@ hr
 
 =======================================*/
 
-html.WebViewMode header
-{
+html.WebViewMode header{
 	display: none !important;
 }
 
-html.WebViewMode body
-{
+html.WebViewMode body{
 	padding-top: 0 !important;
 }
 
-html.WebViewMode footer
-{
+html.WebViewMode footer{
 	display: none !important;
 }
-
-
 
 /*=======================================
 	
@@ -122,29 +90,24 @@ html.WebViewMode footer
 
 =======================================*/
 
-.flex
-{
+.flex{
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 }
 
-.flex-wrap
-{
+.flex-wrap{
 	-ms-flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-
-
 
 /*=======================================
 	
 	COMMON LAYOUT
 
 =======================================*/
-body
-{
+body{
 	position: relative;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -153,30 +116,25 @@ body
 	min-width: 960px;
 }
 
-html.mobile-nav-enabled body
-{
+html.mobile-nav-enabled body{
 	min-width: 320px;
 }
 
-.nav-open body
-{
+.nav-open body{
 	overflow: hidden;
 
 	height: 100%;
 }
 
-body.loadingPage
-{
+body.loadingPage{
 	cursor: progress;
 }
 
-body.noSubNav nav.Sub_Nav
-{
+body.noSubNav nav.Sub_Nav{
 	display: none;
 }
 
-body.has-js-error:before
-{
+body.has-js-error:before{
 	position: fixed;
 	display: block;
 	z-index: 99999;
@@ -195,13 +153,11 @@ body.has-js-error:before
 	font-weight: bold;
 }
 
-.bg_secondary.JS
-{
+.bg_secondary.JS{
 	height: auto;
 }
 
-#content
-{
+#content{
 	position: relative;
 
 	width: 100%;
@@ -209,8 +165,7 @@ body.has-js-error:before
 	-webkit-transition: -webkit-filter 0s 0.15s !important;
 }
 
-#mainContent
-{
+#mainContent{
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
@@ -221,41 +176,33 @@ body.has-js-error:before
 	vertical-align: top;
 }
 
-.noSubNav #mainContent
-{
+.noSubNav #mainContent{
 	min-height: 100vh;
 }
 
-.safari #mainContent
-{
+.safari #mainContent{
 	min-height: 800px;
 }
 
-.text-content ul
-{
+.text-content ul{
 	margin: 0 0 0 36px;
 
 	list-style-type: disc;
 }
 
-.text-content ul li
-{
+.text-content ul li{
 	margin: 4px 0;
 
 	list-style-type: disc;
 }
 
-.text-content ul ul li
-{
+.text-content ul ul li{
 	list-style-type: circle;
 }
 
-.text-content ul ul ul li
-{
+.text-content ul ul ul li{
 	list-style-type: square;
 }
-
-
 
 /*=======================================
 	
@@ -263,8 +210,7 @@ body.has-js-error:before
 
 =======================================*/
 
-.sectionBanner
-{
+.sectionBanner{
 	position: relative;
 	display: block;
 
@@ -276,13 +222,11 @@ body.has-js-error:before
 	transition: 0.25s;
 }
 
-.mobile-nav-enabled .sectionBanner
-{
+.mobile-nav-enabled .sectionBanner{
 	min-width: 0;
 }
 
-.sectionBanner h2
-{
+.sectionBanner h2{
 	text-align: center;
 	letter-spacing: 30px;
 	text-transform: uppercase;
@@ -295,8 +239,7 @@ body.has-js-error:before
 	line-height: 210px;
 }
 
-@media only screen and (max-height: 667px), (max-width: 1515px)
-{
+@media only screen and (max-height: 667px), (max-width: 1515px){
 	.sectionBanner:not(.locked)
 	{
 		height: 105px;
@@ -319,15 +262,13 @@ body.has-js-error:before
 	}
 }
 
-
 /*=======================================
 
 	BREADCRUMB                            
 
 =======================================*/
 
-.breadcrumb
-{
+.breadcrumb{
 	position: relative;
 	z-index: 2;
 	overflow: hidden;
@@ -342,15 +283,12 @@ body.has-js-error:before
 	font-weight: normal;
 	line-height: 44px;
 }
-
-.breadcrumb a:last-child
-{
+.breadcrumb a:last-child{
 	background: none;
 }
 
 .breadcrumb a,
-.breadcrumb a:only-child
-{
+.breadcrumb a:only-child{
 	display: inline;
 
 	margin: 0 6px;
@@ -366,25 +304,19 @@ body.has-js-error:before
 	font-weight: normal;
 }
 
-.breadcrumb > :first-child
-{
+.breadcrumb > :first-child{
 	margin-left: 0;
 }
 
-.breadcrumb a:hover
-{
+.breadcrumb a:hover{
 	text-decoration: underline;
 }
 
-.breadcrumb span
-{
+.breadcrumb span{
 	margin: 0 6px;
 
 	color: rgba(245, 245, 245, 0.25);
 }
-
-
-
 
 /*=======================================
 
@@ -392,8 +324,7 @@ body.has-js-error:before
 
 =======================================*/
 
-#toast-container
-{
+#toast-container{
 	position: fixed;
 	z-index: 99;
 
@@ -401,8 +332,7 @@ body.has-js-error:before
 	bottom: 18px;
 }
 
-#toast-container .toast-message
-{
+#toast-container .toast-message{
 	position: relative;
 
 	box-sizing: border-box;
@@ -426,42 +356,36 @@ body.has-js-error:before
 	line-height: 23px;
 }
 
-#toast-container .toast-message a
-{
+#toast-container .toast-message a{
 	color: rgb(245, 245, 245);
 }
 
-#toast-container .toast-message.warning-message
-{
+#toast-container .toast-message.warning-message{
 	background: #e9d427;
 }
 
-#toast-container .toast-message.error-message
-{
+#toast-container .toast-message.error-message{
 	color: rgba(245, 245, 245, 1);
 	border-color: #f5f5f5;
 	background: rgb(187, 99, 99);
 	text-shadow: 0 1px rgba(0, 0, 0, 1);
 }
 
-#toast-container .toast-message.on
-{
+#toast-container .toast-message.on{
 	-webkit-transform: none;
 	transform: none;
 
 	opacity: 1;
 }
 
-#toast-container .toast-message.off
-{
+#toast-container .toast-message.off{
 	-webkit-transform: translateY(-10px);
 	transform: translateY(-10px);
 
 	opacity: 0;
 }
 
-#toast-container .toast-message span
-{
+#toast-container .toast-message span{
 	padding: 2px 4px;
 	/* margin-top: 3px; */
 	white-space: nowrap;
@@ -471,15 +395,13 @@ body.has-js-error:before
 	font-size: 13px;
 }
 
-#toast-container .conversationUpdate
-{
+#toast-container .conversationUpdate{
 	position: relative;
 
 	top: -4px;
 }
 
-#toast-container .conversationUpdate .avatar
-{
+#toast-container .conversationUpdate .avatar{
 	float: left;
 
 	width: 40px;
@@ -491,14 +413,12 @@ body.has-js-error:before
 	background-size: cover;
 }
 
-#toast-container .conversationUpdate strong
-{
+#toast-container .conversationUpdate strong{
 	font-size: 13px;
 	font-weight: 200;
 }
 
-#toast-container .conversationUpdate p
-{
+#toast-container .conversationUpdate p{
 	overflow: hidden;
 
 	margin-left: 54px;
@@ -516,13 +436,11 @@ body.has-js-error:before
 
 =======================================*/
 
-.select_special
-{
+.select_special{
 	position: relative;
 }
 
-.select_special::after
-{
+.select_special::after{
 	position: absolute;
 	display: inline-block;
 
@@ -541,9 +459,7 @@ body.has-js-error:before
 	line-height: 19px;
 }
 
-.select_special select,
-.select_special option
-{
+.select_special select,.select_special option{
 	width: 100%;
 	margin: initial;
 	padding: initial;
@@ -551,8 +467,7 @@ body.has-js-error:before
 	background: none repeat scroll 0 0 #4b5157;
 }
 
-.select_special select
-{
+.select_special select{
 	width: 100%;
 	padding: 0 0 0 3px;
 
@@ -566,16 +481,14 @@ body.has-js-error:before
 	-webkit-appearance: none;
 }
 
-.select_special option
-{
+.select_special option{
 	padding: 0 2px;
 }
 
 
 
 /* Title followed by a subtitle/description */
-.standardTitle
-{
+.standardTitle{
 	display: block;
 
 	margin-bottom: 0.1rem;
@@ -585,13 +498,11 @@ body.has-js-error:before
 	font-size: 1.1rem;
 }
 
-.standardTitleMedium
-{
+.standardTitleMedium{
 	font-size: 0.85rem;
 }
 
-.standardDesc
-{
+.standardDesc{
 	display: block;
 
 	color: rgba(245, 245, 245, 0.55);
@@ -600,8 +511,7 @@ body.has-js-error:before
 	line-height: 1.2rem;
 }
 
-.dimDesc
-{
+.dimDesc{
 	display: block;
 
 	color: rgba(245, 245, 245, 0.4);
@@ -610,8 +520,7 @@ body.has-js-error:before
 	line-height: 1.2rem;
 }
 
-.standardLabel
-{
+.standardLabel{
 	text-transform: uppercase;
 
 	color: rgba(245, 245, 245, 0.5);
@@ -622,8 +531,7 @@ body.has-js-error:before
 
 /* Hoverable/selectable list */
 
-.selectable-list-item
-{
+.selectable-list-item{
 	position: relative;
 	display: block;
 
@@ -635,23 +543,19 @@ body.has-js-error:before
 	background: #14191e;
 }
 
-.selectable-list-item:hover,
-.selectable-list-item.hover
-{
+.selectable-list-item:hover,.selectable-list-item.hover{
 	border-width: 0 0 0 3px;
 	background: #1a2026;
 }
 
-.selectable-list-item.on
-{
+.selectable-list-item.on{
 	border-width: 0 0 0 3px;
 	background: #1a2026;
 }
 
 
 /* Item with icon */
-.destiny-icon-item
-{
+.destiny-icon-item{
 	position: relative;
 
 	min-height: 70px;
@@ -661,13 +565,11 @@ body.has-js-error:before
 	transition: 0.25s;
 }
 
-.destiny-icon-item .standardTitle
-{
+.destiny-icon-item .standardTitle{
 	margin-bottom: 0;
 }
 
-.destiny-icon-item > .icon
-{
+.destiny-icon-item > .icon{
 	position: absolute;
 
 	top: 0;
@@ -682,8 +584,7 @@ body.has-js-error:before
 	background-size: cover;
 }
 
-.destiny-icon-item:hover
-{
+.destiny-icon-item:hover{
 	z-index: 99;
 
 	background: rgba(245, 245, 245, 0.05);
@@ -702,8 +603,7 @@ body.has-js-error:before
 	border-bottom: 1px solid rgba(245, 245, 245, 0.1);
 }
 
-.destiny-icon-header > img
-{
+.destiny-icon-header > img{
 	display: inline-block;
 
 	width: 98px;
@@ -715,8 +615,7 @@ body.has-js-error:before
 	border: 2px solid #fff;
 }
 
-.destiny-icon-header > .title
-{
+.destiny-icon-header > .title{
 	display: inline-block;
 
 	vertical-align: middle;
@@ -725,13 +624,11 @@ body.has-js-error:before
 	color: #fff;
 }
 
-.destiny-icon-header h3
-{
+.destiny-icon-header h3{
 	font-size: 30px;
 }
 
-.destiny-icon-header .title p
-{
+.destiny-icon-header .title p{
 	color: rgba(245, 245, 245, 0.65);
 
 	font-size: 15px;
@@ -739,39 +636,25 @@ body.has-js-error:before
 }
 
 /* Image zoom on hover */
-.image-zoom-hover
-{
+.image-zoom-hover{
 	overflow: hidden;
 }
 
-.image-zoom-hover > .image,
-.image-zoom-hover > img
-{
+.image-zoom-hover > .image,.image-zoom-hover > img{
 	-webkit-transition: 0.25s;
 	transition: 0.25s;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
-.image-zoom-hover:hover > .image,
-.image-zoom-hover:hover > img
-{
+.image-zoom-hover:hover > .image,.image-zoom-hover:hover > img{
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
 
-
-
-
-
-
-
-
-
 /* Item Header */
 
-h3.item-header
-{
+h3.item-header{
 	color: #f5f5f5;
 
 	font-size: 30px;
@@ -779,8 +662,7 @@ h3.item-header
 
 
 /* App Store Buttons */
-.btn_appStore
-{
+.btn_appStore{
 	width: 190px;
 	height: 53px;
 
@@ -788,8 +670,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.es .btn_appStore
-{
+.es .btn_appStore{
 	width: 190px;
 	height: 53px;
 
@@ -797,8 +678,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.fr .btn_appStore
-{
+.fr .btn_appStore{
 	width: 190px;
 	height: 51px;
 
@@ -806,8 +686,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.it .btn_appStore
-{
+.it .btn_appStore{
 	width: 190px;
 	height: 53px;
 
@@ -815,8 +694,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.pt-br .btn_appStore
-{
+.pt-br .btn_appStore{
 	width: 190px;
 	height: 53px;
 
@@ -824,8 +702,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.de .btn_appStore
-{
+.de .btn_appStore{
 	width: 190px;
 	height: 53px;
 
@@ -833,8 +710,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.ja .btn_appStore
-{
+.ja .btn_appStore{
 	width: 190px;
 	height: 53px;
 
@@ -842,8 +718,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.btn_googlePlay
-{
+.btn_googlePlay{
 	width: 190px;
 	height: 60px;
 
@@ -851,8 +726,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.es .btn_googlePlay
-{
+.es .btn_googlePlay{
 	width: 190px;
 	height: 60px;
 
@@ -860,8 +734,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.fr .btn_googlePlay
-{
+.fr .btn_googlePlay{
 	width: 190px;
 	height: 60px;
 
@@ -869,8 +742,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.de .btn_googlePlay
-{
+.de .btn_googlePlay{
 	width: 190px;
 	height: 60px;
 
@@ -878,8 +750,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.it .btn_googlePlay
-{
+.it .btn_googlePlay{
 	width: 190px;
 	height: 60px;
 
@@ -887,8 +758,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.ja .btn_googlePlay
-{
+.ja .btn_googlePlay{
 	width: 190px;
 	height: 60px;
 
@@ -896,8 +766,7 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-.pt-br .btn_googlePlay
-{
+.pt-br .btn_googlePlay{
 	width: 190px;
 	height: 60px;
 
@@ -905,35 +774,29 @@ h3.item-header
 	background-size: auto 50px;
 }
 
-
 /*=======================================
 
 	MOBILE - KEEP AT BOTTOM
 
 =======================================*/
 
-html.mobile.no-ipad body
-{
+html.mobile.no-ipad body{
 	min-width: 0;
 }
 
-html.mobile.no-ipad header
-{
+html.mobile.no-ipad header{
 	min-width: 0;
 }
 
-html.mobile.no-ipad #sidebar
-{
+html.mobile.no-ipad #sidebar{
 	display: none;
 }
 
-html.mobile.no-ipad .bg_secondary
-{
+html.mobile.no-ipad .bg_secondary{
 	width: 100%;
 	margin-left: 0;
 }
 
-html.mobile.no-ipad #content
-{
+html.mobile.no-ipad #content{
 	width: 100% !important;
 }
